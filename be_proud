@@ -1,0 +1,16 @@
+#include "shell.h"
+
+/**
+ * Description : compares two numbers
+ *
+ *
+ * Return: 1 if thesame, 0 otherwise
+ */
+    int main()
+{
+    int a=6 , b=9 ;
+    if (a==b)
+    output ("A and B are thesame")
+    else
+    output ("A and B are not thesame")
+}
