@@ -87,6 +87,6 @@ int populate_env_list(data_t *data)
 
 	for (i = 0; environ[i]; i++)
 		add_node_end(&node, environ[i], 0);
-	info->env = node;
+	data->env = node;
 	return (0);
 }
