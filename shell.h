@@ -180,5 +180,31 @@ int replace_string(char **, char *);
 /* toem_memory.c */
 int bfree(void **);
 
+/* toem_shloop.c */
+int hsh(data_t *, char **);
+int find_builtin(data_t *);
+void find_cmd(data_t *);
+void fork_cmd(data_t *);
+
+/* loophsh.c */
+int loophsh(char **);
+
+/* toem_string.c */
+int _strlen(char *);
+int _strcmp(char *, char *);
+char *starts_with(const char *, const char *);
+char *_strcat(char *, char *);
+
+/* toem_string 2 .c */
+char *_strcpy(char *, char *);
+char *_strdup(const char *);
+void _puts(char *);
+int _putchar(char);
+
+/* toem_realloc.c */
+char *_memset(char *, char, unsigned int);
+void ffree(char **);
+void *_realloc(void *, unsigned int, unsigned int);
+
 #endif
 
