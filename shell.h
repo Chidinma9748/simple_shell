@@ -133,9 +133,9 @@ int remove env(data_t *);
 int populate_env_list(data_t *);
 
 /* toem_parser.c */
-int is_cmd(info_t *, char *);
+int is_cmd(data_t *, char *);
 char *dup_chars(char *, int, int);
-char *find_path(info_t *, char *, char *);
+char *find_path(data_t *, char *, char *);
 
 
 /* toem_errors.c */
