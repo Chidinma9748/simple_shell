@@ -170,5 +170,15 @@ void clear_data(data_t *);
 void set_data(data_t *, char **);
 void free_data(data_t *, int);
 
+/* toem_variable.c */
+int is_chain(data_t *, char *, size_t *);
+void check_chain(data_t *, char *, size_t *, size_t, size_t);
+int replace_alias(data_t *);
+int replace_vars(data_t *);
+int replace_string(char **, char *);
+
+/* toem_memory.c */
+int bfree(void **);
+
 #endif
 
