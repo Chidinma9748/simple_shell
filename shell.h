@@ -132,5 +132,43 @@ int new_env(data_t *);
 int remove env(data_t *);
 int populate_env_list(data_t *);
 
+/* toem_parser.c */
+int is_cmd(info_t *, char *);
+char *dup_chars(char *, int, int);
+char *find_path(info_t *, char *, char *);
+
+
+/* toem_errors.c */
+void _eputs(char *);
+int _eputchar(char);
+int _putfd(char c, int fd);
+int _putsfd(char *str, int fd);
+
+/* toem_quit.c */
+char *_strncpy(char *, char *, int);
+char *_strncat(char *, char *, int);
+char *_strchr(char *, char);
+
+/* toem_tokenise.c */
+char **strtow(char *, char *);
+char **strtow2(char *, char);
+
+/* toem_errors2.c */
+int _erratoi(char *);
+void print_error(data_t *, char *);
+int print_d(int, int);
+char *convert_number(long int, int, int);
+void remove_comments(char *);
+
+/* toem_getenv.c */
+char **get_environ(data_t *);
+int _unsetenv(data_t *, char *);
+int _setenv(data_t *, char *, char *);
+
+/* toem_getinfo.c */
+void clear_data(data_t *);
+void set_data(data_t *, char **);
+void free_data(data_t *, int);
+
 #endif
 
